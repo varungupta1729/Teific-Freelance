@@ -1,4 +1,5 @@
 import React from "react";
+import ThreeModel from "../components/Home/ThreeModel";
 const Template = ({ id, bgText, heading, content, imageUrl }) => {
   return (
     <div className="w-full h-screen ">
@@ -22,7 +23,10 @@ const Template = ({ id, bgText, heading, content, imageUrl }) => {
         </div>
         {/* Right Div  */}
         <div className="w-1/2 h-full  flex justify-center items-center ">
-          <img src={imageUrl} alt="ambu" />
+        {
+          imageUrl ?  (<img src={imageUrl} alt="ambu" />) :(<ThreeModel/>)
+        }
+          
         </div>
       </div>
     </div>
