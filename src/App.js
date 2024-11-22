@@ -3,6 +3,7 @@ import './App.css';
 import React, { Suspense } from 'react';
 import { Route, Router, Routes } from 'react-router';
 import OrganizationOverviewPage from './pages/OrganizationOverviewPage';
+import AboutPage from './pages/AboutPage';
 // import HomePage from './pages/HomePage';
 
 const Home = React.lazy(() => import("./pages/HomePage"));
@@ -16,7 +17,8 @@ function App() {
       <Suspense fallback={<div>Loading...</div>}>
         <Routes>
           <Route path="/" element={<Home />} />
-          <Route path="/about" element={<WhyTeific />} />
+          <Route path="/blog" element={<WhyTeific />} />
+          <Route path="/about" element={<AboutPage />} />
           <Route path="/contact" element={<Contact />} />
           <Route path="/organization" element={<OrganizationOverviewPage />} />
         </Routes>
