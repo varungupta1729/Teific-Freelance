@@ -34,11 +34,11 @@ const Contact = () => {
             }
           />
         </div>
-        <div className="bg-[#193A4B4D] rounded-3xl px-10 md:w-[40%] py-10 flex flex-col gap-6">
-          <h2 className="text-4xl font-bold">
+        <div className="bg-[#193A4B4D] rounded-3xl px-5 md:px-10 md:w-[40%] py-10 flex flex-col gap-6">
+          <h2 className="text-2xl md:text-4xl font-bold">
             Get in <span className="text-[#FBC93E]">Touch</span>
           </h2>
-          <p>
+          <p className="md:text-bs text-xs">
             Have a question, need assistance, or want to learn more about our
             products and services? We're here to help! <br />
             Feel free to contact us using the information below.

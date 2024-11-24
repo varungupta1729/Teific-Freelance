@@ -2,7 +2,7 @@ import React from "react";
 import DirectorPhoto from "../../Assets/images/Frame 1.png";
 const DirectorSection = () => {
   return (
-    <div className="px-10 md:px-28 py-20 flex md:flex-row flex-col-reverse w-full">
+    <div className="px-10 md:px-28 py-20 flex md:flex-row flex-col-reverse w-full mt-10 md:mt-0">
       <div className="w-full md:w-1/2 flex flex-col gap-7 justify-center text-center md:text-right">
         <h2 className="text-[#9DC4FF] text-7xl font-bold ">
           Keshav <br />
