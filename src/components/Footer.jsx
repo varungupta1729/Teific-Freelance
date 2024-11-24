@@ -5,11 +5,11 @@ import { Link } from "react-router-dom";
 import { BiUser } from "react-icons/bi";
 const Footer = () => {
   return (
-    <div className="px-24 text-center md:text-left">
+    <div className="px-10 md:px-24 text-center md:text-left">
       <div className="flex  flex-col md:flex-row gap-10 justify-between py-10 items-center border-b  border-[#FFFFFF3D] ">
         <div className="text-3xl">
           {" "}
-          Join our newsletter to <br /> keep up to date with us!
+          Join our newsletter to <br className="hidden md:block" /> keep up to date with us!
         </div>
         <div className="flex justify-center items-center flex-col md:flex-row gap-10 md:gap-0 ">
             <div className="flex justify-center items-center relative">
