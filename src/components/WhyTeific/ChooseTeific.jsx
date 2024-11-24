@@ -18,7 +18,7 @@ const ChooseTeific = () => {
           initial="initial"
           whileInView="animate"
           exit="exit"
-          viewport={{ once: true, amount: 0.5 }} // Ensures it animates only once when 50% is in view
+          viewport={{ once: true, amount: 0.7 }} // Ensures it animates only once when 50% is in view
           variants={slideAnimation("left")}
           className="  lg:w-1/2 h-full gap-10 lg:gap-2 flex flex-col items-center  justify-evenly"
         >
@@ -48,7 +48,7 @@ const ChooseTeific = () => {
           initial="initial"
           whileInView="animate"
           exit="exit"
-          viewport={{ once: true, amount: 0.5 }} // Ensures it animates only once when 50% is in view
+          viewport={{ once: true, amount: 0.7 }} // Ensures it animates only once when 50% is in view
           variants={slideAnimation("right")}
           className="lg:w-1/2 h-full flex flex-col justify-evenly  gap-10 lg:gap-0"
         >

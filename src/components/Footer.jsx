@@ -11,7 +11,7 @@ const Footer = () => {
       <motion.div  initial="initial"
   whileInView="animate"
   exit="exit"
-  viewport={{ once: true, amount: 0.5 }} // Ensures it animates only once when 50% is in view
+  viewport={{ once: true, amount: 0.7 }} // Ensures it animates only once when 50% is in view
   variants={slideAnimation('up')} className="flex  flex-col lg:flex-row gap-10 justify-between py-10 items-center border-b  border-[#FFFFFF3D] ">
         <div className="text-3xl">
           {" "}
@@ -35,7 +35,7 @@ const Footer = () => {
       <motion.div  initial="initial"
   whileInView="animate"
   exit="exit"
-  viewport={{ once: true, amount: 0.5 }} // Ensures it animates only once when 50% is in view
+  viewport={{ once: true, amount: 0.7 }} // Ensures it animates only once when 50% is in view
   variants={slideAnimation('up')} className="flex flex-col  gap-10 lg:gap-0 lg:flex-row w-full py-10 items-center border-b  border-[#FFFFFF3D] ">
         <div className="w-full  items-center lg:items-start lg:w-1/2 flex flex-col gap-4">
           <div>
@@ -63,7 +63,7 @@ const Footer = () => {
       <motion.div  initial="initial"
   whileInView="animate"
   exit="exit"
-  viewport={{ once: true, amount: 0.5 }} // Ensures it animates only once when 50% is in view
+  viewport={{ once: true, amount: 0.7 }} // Ensures it animates only once when 50% is in view
   variants={slideAnimation('up')} className="py-16 flex flex-col  gap-10 lg:gap-0 lg:flex-row w-full justify-between text-[#FFFFFFCC] "> 
         <div className="lg:w-1/3  flex flex-col gap-7">
             <h4 className="text-[#FBC93ECC]">Registered Office Address
@@ -85,7 +85,7 @@ const Footer = () => {
       <motion.div  initial="initial"
   whileInView="animate"
   exit="exit"
-  viewport={{ once: true, amount: 0.5 }} // Ensures it animates only once when 50% is in view
+  viewport={{ once: true, amount: 0.7 }} // Ensures it animates only once when 50% is in view
   variants={slideAnimation('up')} className="flex justify-between flex-col  gap-10 lg:gap-0 lg:flex-row pb-12 text-[#FFFFFFCC]">
         <div>© 2024 Teific Technology Pvt. Ltd</div>
         <div>

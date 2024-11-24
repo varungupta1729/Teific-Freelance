@@ -9,7 +9,7 @@ const WhyTeificHero = () => {
       <motion.div  initial="initial"
   whileInView="animate"
   exit="exit"
-  viewport={{ once: true, amount: 0.5 }} // Ensures it animates only once when 50% is in view
+  viewport={{ once: true, amount: 0.7 }} // Ensures it animates only once when 50% is in view
   variants={slideAnimation('left')} className='text-center lg:w-1/2 flex flex-col gap-4 px-10 justify-center lg:text-justify'>
         <h2 className='text-3xl font-bold'>Why <span className='text-[#FBC93E]'>Teific </span>Technology?</h2>
         <p>Teific Technology is your trusted partner for innovative solutions in the fields of customized drones,  smart healthcare devices, and smart home products. We are committed to providing exceptional  products and services that meet your unique needs, backed by our expertise and dedication to  excellence.</p>

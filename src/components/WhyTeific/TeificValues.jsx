@@ -18,7 +18,7 @@ const TeificValues = () => {
           initial="initial"
           whileInView="animate"
           exit="exit"
-          viewport={{ once: true, amount: 0.5 }} // Ensures it animates only once when 50% is in view
+          viewport={{ once: true, amount: 0.7 }} // Ensures it animates only once when 50% is in view
           variants={slideAnimation("left")}
           className="lg:w-1/2 h-full flex flex-col  gap-2 justify-evenly items-center"
         >
@@ -38,34 +38,29 @@ const TeificValues = () => {
           initial="initial"
           whileInView="animate"
           exit="exit"
-          viewport={{ once: true, amount: 0.5 }} // Ensures it animates only once when 50% is in view
+          viewport={{ once: true, amount: 0.7 }} // Ensures it animates only once when 50% is in view
           variants={slideAnimation("right")}
           className="w-full lg:w-1/2 h-full flex flex-col justify-evenly lg:px-12 gap-10 lg:gap-0 "
         >
           <BulletPoint
             heading={"Innovation"}
             content={
-              "We stay at the forefront of technology, offering cutting-edge solutions that enhance your lifestyle."
+              "We are committed to pushing the boundaries of technology and delivering innovative solutions that exceed expectations."
             }
           />
           <BulletPoint
-            heading={"Quality"}
+            heading={"Customer Centricity"}
             content={
-              "Our products are built with the highest quality standards, guaranteeing reliability and durability. "
+              " We prioritize our customers' needs and strive to provide exceptional products and services that enhance their lives. "
             }
           />
           <BulletPoint
-            heading={"Expertise"}
+            heading={"Integrity"}
             content={
-              "Our team of experts has extensive knowledge and experience in their respective fields, ensuring top-notch service. "
+              "We uphold the highest ethical standards in all our endeavors, building trust and credibility. "
             }
           />
-          <BulletPoint
-            heading={"Customer Satisfaction"}
-            content={
-              "We prioritize customer satisfaction and strive to provide exceptional support throughout your journey."
-            }
-          />
+         
         </motion.div>
       </div>
     </div>
