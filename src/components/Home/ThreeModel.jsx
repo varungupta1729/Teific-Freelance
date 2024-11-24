@@ -71,8 +71,11 @@ const ThreeModel = () => {
       {/* Background Images */}
       <img src={Frame} className="absolute top-0 -z-10 md:h-full  h-[100%] w-full"  alt="" />
       <div>
-      <img src={Frame16} className="hidden md:block  absolute -bottom-36  -left-7" alt="" />
-      <img src={Frame39} className=" hidden md:block md:absolute -bottom-44  -right-32" alt="" />
+        <div className="flex gap-10 relative">
+        <img src={Frame16} className="hidden xl:block   absolute -bottom-36  -left-7" alt="" />
+        <img src={Frame39} className=" hidden xl:block md:absolute -bottom-44  -right-32" alt="" />
+        </div>
+      
 
       {/* Buttons for rotation */}
     
