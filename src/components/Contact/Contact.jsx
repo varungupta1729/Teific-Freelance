@@ -4,9 +4,9 @@ import image from "../../Assets/images/Group 1000000922.png";
 
 const Contact = () => {
   return (
-    <div className="px-10 md:px-20 flex flex-col gap-16 mb-10 mt-24">
+    <div className="px-10 lg:px-20 flex flex-col gap-6 lg:gap-16 mb-10 mt-24">
       <div className="w-full flex">
-        <div className="w-full md:w-1/2 md:px-24 flex justify-center ">
+        <div className="w-full lg:w-1/2 lg:px-24 flex justify-center ">
           <BulletPoint
             heading={"B2B (Business-to-Business) "}
             content={
@@ -14,13 +14,13 @@ const Contact = () => {
             }
           />
         </div>
-        <div className="hidden w-[40%] md:flex justify-center items-center">
+        <div className="hidden w-[40%] lg:flex justify-center items-center">
           <img src={image} alt="logo" />
         </div>
       </div>
 
-      <div className="flex md:flex-row flex-col gap-10">
-        <div className="md:w-1/2 md:px-24 flex flex-col  mt-10 gap-6">
+      <div className="flex lg:flex-row flex-col gap-10">
+        <div className="lg:w-1/2 lg:px-24 flex flex-col  lg:mt-10 gap-6">
           <BulletPoint
             heading={"B2C (Business-to-Consumer)"}
             content={
@@ -34,11 +34,11 @@ const Contact = () => {
             }
           />
         </div>
-        <div className="bg-[#193A4B4D] rounded-3xl px-5 md:px-10 md:w-[40%] py-10 flex flex-col gap-6">
-          <h2 className="text-2xl md:text-4xl font-bold">
+        <div className="bg-[#193A4B4D] rounded-3xl px-5 lg:px-10 lg:w-[40%] py-10 flex flex-col gap-6 justify-center  ">
+          <h2 className="text-2xl lg:text-4xl font-bold">
             Get in <span className="text-[#FBC93E]">Touch</span>
           </h2>
-          <p className="md:text-bs text-xs">
+          <p className="lg:text-bs text-xs">
             Have a question, need assistance, or want to learn more about our
             products and services? We're here to help! <br />
             Feel free to contact us using the information below.

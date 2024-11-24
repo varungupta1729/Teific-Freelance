@@ -2,8 +2,8 @@ import React from "react";
 import DirectorPhoto from "../../Assets/images/Frame 1.png";
 const DirectorSection = () => {
   return (
-    <div className="px-10 md:px-28 py-20 flex md:flex-row flex-col-reverse w-full mt-10 md:mt-0">
-      <div className="w-full md:w-1/2 flex flex-col gap-7 justify-center text-center md:text-right">
+    <div className="px-10 lg:px-28 py-20 flex lg:flex-row flex-col-reverse w-full mt-10 lg:mt-0">
+      <div className="w-full lg:w-1/2 flex flex-col gap-7 justify-center text-center lg:text-right">
         <h2 className="text-[#9DC4FF] text-7xl font-bold ">
           Keshav <br />
           Raina
@@ -28,7 +28,7 @@ const DirectorSection = () => {
           any way we can.{" "}
         </p>
       </div>
-      <div className="w-full md:w-1/2 flex justify-center items-center">
+      <div className="w-full lg:w-1/2 flex justify-center items-center">
         <img src={DirectorPhoto} alt="" />
       </div>
     </div>

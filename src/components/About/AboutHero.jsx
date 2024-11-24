@@ -2,9 +2,9 @@ import React from 'react'
 import bg from '../../Assets/images/Group 1000000926.png'
 const AboutHero = () => {
   return (
-    <div className='md:h-screen relative  md:-mt-20 -z-10'>
-      <img src={bg} alt='bg' className='bg-cover md:h-screen w-full'/>
-      <div className='w-full text-center  md:w-1/3 absolute md:right-28 px-10 md:text-justify text-balance flex flex-col top-0 gap-4 md:top-[30%]' >
+    <div className='lg:h-screen relative  lg:-mt-20 -z-10  flex justify-center items-center'>
+      <img src={bg} alt='bg' className='bg-cover lg:h-screen w-full'/>
+      <div className='w-full text-center  lg:w-1/3 absolute md:h-full lg:right-28 px-10 lg:text-justify text-balance flex flex-col top-0 gap-4  justify-center' >
         <h2 className='text-xl md:text-3xl font-bold'>
         Organization <span className='text-[#FBC93E]'>Overview</span>
         </h2>

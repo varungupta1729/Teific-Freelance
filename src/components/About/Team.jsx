@@ -3,7 +3,7 @@ import bg from '../../Assets/images/bgabouteam.png'
 import image from '../../Assets/images/Image Section.png'
 const Team = () => {
   return (
-    <div className='md:h-screen relative'>
+    <div className='lg:h-screen relative'>
       <img src={bg} alt='bg' />
       <div className='absolute top-0 h-full flex flex-col justify-center items-center w-full gap-7'>
       <h2 className='text-3xl font-bold'>
