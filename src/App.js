@@ -4,6 +4,7 @@ import React, { Suspense } from 'react';
 import { Route, Router, Routes } from 'react-router';
 import OrganizationOverviewPage from './pages/OrganizationOverviewPage';
 import AboutPage from './pages/AboutPage';
+import Loader from './components/Loader/Loader';
 // import HomePage from './pages/HomePage';
 
 const Home = React.lazy(() => import("./pages/HomePage"));
@@ -14,7 +15,7 @@ function App() {
   return (
   
          
-      <Suspense fallback={<div>Loading...</div>}>
+      <Suspense fallback={<Loader/>}>
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/blog" element={<WhyTeific />} />

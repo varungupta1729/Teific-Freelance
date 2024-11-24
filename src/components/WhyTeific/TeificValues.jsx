@@ -12,7 +12,7 @@ const TeificValues = () => {
     <div className='px-10 lg:px-36 flex w-full h-full  flex-col lg:flex-row-reverse gap-10'>
         <div className='lg:w-1/2 h-full flex flex-col  gap-2 justify-evenly items-center'> 
         
-            <div className=' '>
+            <div className=''>
                 <div className='flex'>
                     <img src={Diamond} alt='' className='w-32 h-32 lg:w-48 lg:h-48'  />
                     <img src={Square} alt=''  className='w-32 h-32 lg:w-48 lg:h-48' />
