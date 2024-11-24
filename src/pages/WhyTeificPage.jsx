@@ -8,7 +8,7 @@ import TeificCharter from '../components/WhyTeific/TeificCharter.jsx'
 const WhyTeificPage = () => {
   return (
     <div>
-      <Header position={true}/>
+      <Header position={false}/>
       <WhyTeificHero/>
       <ChooseTeific/>
       <TeificValues/>

@@ -1,5 +1,7 @@
 import React from "react";
 import ThreeModel from "../components/Home/ThreeModel";
+import { motion } from "motion/react";
+import { slideAnimation } from "../motion/motion";
 const Template = ({ id, bgText, heading, content, imageUrl }) => {
   return (
     <div className="w-full lg:h-screen my-10 relative">
@@ -15,18 +17,26 @@ const Template = ({ id, bgText, heading, content, imageUrl }) => {
         } `}
       >
         {/* Left Div */}
-        <div className="w-full lg:w-1/2 h-full  flex flex-col justify-center px-10  lg:px-28 gap-4">
+        <motion.div
+          initial="initial"
+          whileInView="animate"
+          exit="exit"
+          viewport={{ once: true, amount: 0.5 }} // Ensures it animates only once when 50% is in view
+          variants={id%2? slideAnimation("right"):slideAnimation("left")}
+          className="w-full lg:w-1/2 h-full  flex flex-col justify-center px-10  lg:px-28 gap-4"
+        >
           <h2 className="text-[#FBC93E] text-2xl text-center lg:text-left lg:text-5xl font-bold  lg:leading-relaxed pr-9">
             {heading}{" "}
           </h2>
           <p className=" lg:text-2xl tracking-wide  text-justify"> {content}</p>
-        </div>
+        </motion.div>
         {/* Right Div  */}
         <div className=" w-full lg:w-1/2 h-full  flex justify-center items-center ">
-        {
-          imageUrl ?  (<img src={imageUrl} alt="ambu" className="w-[60%] lg:h-[70%]" />) :(<ThreeModel/>)
-        }
-          
+          {imageUrl ? (
+            <img src={imageUrl} alt="ambu" className="w-[60%] lg:h-[70%]" />
+          ) : (
+            <ThreeModel />
+          )}
         </div>
       </div>
     </div>

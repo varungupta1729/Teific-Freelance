@@ -14,7 +14,11 @@ export const HeaderNav = [
     {
         content:"Contact Us",
         link:'/contact',
-    }
+    },
+    {
+      content:"Why Teific",
+      link:'/whyteific',
+  },
 ];
 
 

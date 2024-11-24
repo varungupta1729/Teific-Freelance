@@ -1,26 +1,49 @@
 import React from "react";
 import BulletPoint from "../../utils/BulletPoint";
 import image from "../../Assets/images/Group 1000000922.png";
+import { slideAnimation } from "../../motion/motion";
+import {motion} from 'motion/react'
 
 const Contact = () => {
   return (
     <div className="px-10 lg:px-20 flex flex-col gap-6 lg:gap-16 mb-10 mt-24">
       <div className="w-full flex">
-        <div className="w-full lg:w-1/2 lg:px-24 flex justify-center ">
+        <motion.div
+          initial="initial"
+          whileInView="animate"
+          exit="exit"
+          viewport={{ once: true, amount: 0.5 }} // Ensures it animates only once when 50% is in view
+          variants={slideAnimation("left")}
+          className="w-full lg:w-1/2 lg:px-24 flex justify-center "
+        >
           <BulletPoint
             heading={"B2B (Business-to-Business) "}
             content={
               "Teific Technology offers a comprehensive range of B2B solutions tailored to meet the unique needs of businesses across various industries. From customized drones for aerial inspections to advanced smart healthcare devices for medical facilities, our innovative products and services empower businesses to improve efficiency, reduce costs, and drive growth. "
             }
           />
-        </div>
-        <div className="hidden w-[40%] lg:flex justify-center items-center">
+        </motion.div>
+        <motion.div
+          initial="initial"
+          whileInView="animate"
+          exit="exit"
+          viewport={{ once: true, amount: 0.5 }} // Ensures it animates only once when 50% is in view
+          variants={slideAnimation("right")}
+          className="hidden w-[40%] lg:flex justify-center items-center"
+        >
           <img src={image} alt="logo" />
-        </div>
+        </motion.div>
       </div>
 
       <div className="flex lg:flex-row flex-col gap-10">
-        <div className="lg:w-1/2 lg:px-24 flex flex-col  lg:mt-10 gap-6">
+        <motion.div
+          initial="initial"
+          whileInView="animate"
+          exit="exit"
+          viewport={{ once: true, amount: 0.5 }} // Ensures it animates only once when 50% is in view
+          variants={slideAnimation("left")}
+          className="lg:w-1/2 lg:px-24 flex flex-col  lg:mt-10 gap-6"
+        >
           <BulletPoint
             heading={"B2C (Business-to-Consumer)"}
             content={
@@ -33,8 +56,15 @@ const Contact = () => {
               "Teific Technology is committed to supporting government initiatives and contributing to public welfare. We offer a range of B2G solutions, including customized drones for government agencies, smart city technologies, and tailored product development to address specific government needs. Our goal is to leverage our expertise to develop innovative solutions that benefit society and drive positive change."
             }
           />
-        </div>
-        <div className="bg-[#193A4B4D] rounded-3xl px-5 lg:px-10 lg:w-[40%] py-10 flex flex-col gap-6 justify-center  ">
+        </motion.div>
+        <motion.div
+          initial="initial"
+          whileInView="animate"
+          exit="exit"
+          viewport={{ once: true, amount: 0.5 }} // Ensures it animates only once when 50% is in view
+          variants={slideAnimation("right")}
+          className="bg-[#193A4B4D] rounded-3xl px-5 lg:px-10 lg:w-[40%] py-10 flex flex-col gap-6 justify-center  "
+        >
           <h2 className="text-2xl lg:text-4xl font-bold">
             Get in <span className="text-[#FBC93E]">Touch</span>
           </h2>
@@ -68,7 +98,7 @@ const Contact = () => {
               SUBMIT
             </button>
           </form>
-        </div>
+        </motion.div>
       </div>
     </div>
   );

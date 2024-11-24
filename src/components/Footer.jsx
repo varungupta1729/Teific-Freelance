@@ -3,10 +3,16 @@ import Logo from "../Assets/images/Logo.png";
 import { FooterData } from "../static/data";
 import { Link } from "react-router-dom";
 import { BiUser } from "react-icons/bi";
+import {motion} from 'motion/react'
+import {slideAnimation} from '../motion/motion.js'
 const Footer = () => {
   return (
-    <div className="px-10 lg:px-24 text-center lg:text-left">
-      <div className="flex  flex-col lg:flex-row gap-10 justify-between py-10 items-center border-b  border-[#FFFFFF3D] ">
+    <div className="px-10 lg:px-24 text-center lg:text-left overflow-hidden">
+      <motion.div  initial="initial"
+  whileInView="animate"
+  exit="exit"
+  viewport={{ once: true, amount: 0.5 }} // Ensures it animates only once when 50% is in view
+  variants={slideAnimation('up')} className="flex  flex-col lg:flex-row gap-10 justify-between py-10 items-center border-b  border-[#FFFFFF3D] ">
         <div className="text-3xl">
           {" "}
           Join our newsletter to <br className="hidden lg:block" /> keep up to date with us!
@@ -25,8 +31,12 @@ const Footer = () => {
             Subsribe
           </button>
         </div>
-      </div>
-      <div className="flex flex-col  gap-10 lg:gap-0 lg:flex-row w-full py-10 items-center border-b  border-[#FFFFFF3D] ">
+      </motion.div>
+      <motion.div  initial="initial"
+  whileInView="animate"
+  exit="exit"
+  viewport={{ once: true, amount: 0.5 }} // Ensures it animates only once when 50% is in view
+  variants={slideAnimation('up')} className="flex flex-col  gap-10 lg:gap-0 lg:flex-row w-full py-10 items-center border-b  border-[#FFFFFF3D] ">
         <div className="w-full  items-center lg:items-start lg:w-1/2 flex flex-col gap-4">
           <div>
             <img src={Logo} alt="logo" />
@@ -48,9 +58,13 @@ const Footer = () => {
             )
         }
         </div>
-      </div>
+      </motion.div>
       {/* Address and Contact */}
-      <div className="py-16 flex flex-col  gap-10 lg:gap-0 lg:flex-row w-full justify-between text-[#FFFFFFCC] "> 
+      <motion.div  initial="initial"
+  whileInView="animate"
+  exit="exit"
+  viewport={{ once: true, amount: 0.5 }} // Ensures it animates only once when 50% is in view
+  variants={slideAnimation('up')} className="py-16 flex flex-col  gap-10 lg:gap-0 lg:flex-row w-full justify-between text-[#FFFFFFCC] "> 
         <div className="lg:w-1/3  flex flex-col gap-7">
             <h4 className="text-[#FBC93ECC]">Registered Office Address
             </h4>
@@ -67,8 +81,12 @@ const Footer = () => {
             </ul>
         </div>
 
-      </div>
-      <div className="flex justify-between flex-col  gap-10 lg:gap-0 lg:flex-row pb-12 text-[#FFFFFFCC]">
+      </motion.div>
+      <motion.div  initial="initial"
+  whileInView="animate"
+  exit="exit"
+  viewport={{ once: true, amount: 0.5 }} // Ensures it animates only once when 50% is in view
+  variants={slideAnimation('up')} className="flex justify-between flex-col  gap-10 lg:gap-0 lg:flex-row pb-12 text-[#FFFFFFCC]">
         <div>© 2024 Teific Technology Pvt. Ltd</div>
         <div>
             <ul className="flex flex-col lg:flex-row gap-8">
@@ -78,7 +96,7 @@ const Footer = () => {
                 <li>Warranty</li>
             </ul>
         </div>
-      </div>
+      </motion.div>
     </div>
   );
 };
