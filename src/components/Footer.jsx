@@ -5,13 +5,13 @@ import { Link } from "react-router-dom";
 import { BiUser } from "react-icons/bi";
 const Footer = () => {
   return (
-    <div className="px-24">
-      <div className="flex justify-between py-10 items-center border-b  border-[#FFFFFF3D] ">
+    <div className="px-24 text-center md:text-left">
+      <div className="flex  flex-col md:flex-row gap-10 justify-between py-10 items-center border-b  border-[#FFFFFF3D] ">
         <div className="text-3xl">
           {" "}
           Join our newsletter to <br /> keep up to date with us!
         </div>
-        <div className="flex justify-center items-center">
+        <div className="flex justify-center items-center flex-col md:flex-row gap-10 md:gap-0 ">
             <div className="flex justify-center items-center relative">
             <BiUser className="absolute left-4 text-[#FFFFFFB8]" /> 
             <input
@@ -26,8 +26,8 @@ const Footer = () => {
           </button>
         </div>
       </div>
-      <div className="flex w-full py-10 items-center border-b  border-[#FFFFFF3D] ">
-        <div className="w-1/2 flex flex-col gap-4">
+      <div className="flex flex-col  gap-10 md:gap-0 md:flex-row w-full py-10 items-center border-b  border-[#FFFFFF3D] ">
+        <div className="w-full  items-center md:items-start md:w-1/2 flex flex-col gap-4">
           <div>
             <img src={Logo} alt="logo" />
           </div>
@@ -36,7 +36,7 @@ const Footer = () => {
             <i>Empowering ease of your life</i>
           </h3>
         </div>
-        <div className="w-1/2  flex justify-between">
+        <div className="w-full md:w-1/2  flex flex-col  gap-10 md:gap-0 md:flex-row justify-between">
         {
             FooterData.map((item)=>
              <ul className="flex flex-col gap-3">
@@ -50,8 +50,8 @@ const Footer = () => {
         </div>
       </div>
       {/* Address and Contact */}
-      <div className="py-16 flex w-full justify-between text-[#FFFFFFCC] "> 
-        <div className="w-1/3  flex flex-col gap-7">
+      <div className="py-16 flex flex-col  gap-10 md:gap-0 md:flex-row w-full justify-between text-[#FFFFFFCC] "> 
+        <div className="md:w-1/3  flex flex-col gap-7">
             <h4 className="text-[#FBC93ECC]">Registered Office Address
             </h4>
             <p>Mf-1, First Floor, 9/15, Ved Homes, Sector- 3, Rajendra Nagar, Ghaziabad,(U.P)201005, India</p>
@@ -68,10 +68,10 @@ const Footer = () => {
         </div>
 
       </div>
-      <div className="flex justify-between pb-12 text-[#FFFFFFCC]">
+      <div className="flex justify-between flex-col  gap-10 md:gap-0 md:flex-row pb-12 text-[#FFFFFFCC]">
         <div>© 2024 Teific Technology Pvt. Ltd</div>
         <div>
-            <ul className="flex gap-8">
+            <ul className="flex flex-col md:flex-row gap-8">
                 <li>Terms of Service</li>
                 <li>Privacy Policy</li>
                 <li>Refund Policy</li>

@@ -7,10 +7,10 @@ import Social from "../../Assets/images/Group 24.png";
 
 const TeificCharter = () => {
   return (
-    <div className="bg-[#1D1D1F] flex flex-col gap-8 px-32 py-7">
-        <h2 className="text-3xl font-bold text-right">Teific Technology <span className="text-[#FBC93E]">Charter</span>  </h2>
+    <div className="bg-[#1D1D1F] flex flex-col gap-8 px-10 md:px-32 py-7">
+        <h2 className="text-3xl font-bold text-center md:text-right">Teific Technology <span className="text-[#FBC93E]">Charter</span>  </h2>
       <div className="w-full flex justify-center "> 
-        <div className="flex gap-7">
+        <div className="flex gap-7 overflow-x-auto">
           <img src={Excellence} alt="image" />
           <img src={Collaboration} alt="image" />
           <img src={Sustainablility} alt="image" />

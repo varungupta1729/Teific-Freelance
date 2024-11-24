@@ -7,7 +7,7 @@ import Team from '../components/About/Team'
 const AboutPage = () => {
   return (
     <div>
-     <Header position={false}/>
+     <Header position={true}/>
      <AboutHero/>
      <DirectorSection/>
      <Team/>

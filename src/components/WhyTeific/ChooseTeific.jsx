@@ -6,10 +6,10 @@ import Quad from '../../Assets/images/quad.png'
 import Diamond from '../../Assets/images/diamond.png'
 const ChooseTeific = () => {
   return (
-    <div className='w-full h-screen py-10 bg-[#1D1D1F]'>
-        <h2 className='text-3xl font-bold px-24'>Here's why you should choose <span className='text-[#FBC93E]'>Teific</span></h2>
-        <div className='px-36 flex w-full h-full'>
-            <div className='w-1/2 h-full flex flex-col gap-2 justify-evenly'> 
+    <div className='w-full md:h-screen py-10 bg-[#1D1D1F]'>
+        <h2 className='my-10 md:my-0 text-3xl font-bold px-24 text-center md:text-left'>Here's why you should choose <span className='text-[#FBC93E]'>Teific</span></h2>
+        <div className='px-10 md:px-36 flex gap-10 md:gap-0  md:flex-row flex-col w-full h-full justify-center items-center'>
+            <div className='md:w-1/2 h-full gap-10 md:gap-2 flex flex-col  justify-evenly'> 
                 <BulletPoint heading={"Customization"} content={"Our products are tailored to your specific requirements, ensuring optimal performance and functionality."} />
                 <div>
                     <div className='flex'>
@@ -25,7 +25,7 @@ const ChooseTeific = () => {
                 </div>
             </div>
  
-            <div className='w-1/2 h-full flex flex-col justify-evenly px-12 ' >
+            <div className='md:w-1/2 h-full flex flex-col justify-evenly  gap-10 md:gap-0' >
                 <BulletPoint heading={"Innovation"} content={"We stay at the forefront of technology, offering cutting-edge solutions that enhance your lifestyle."}/>
                 <BulletPoint heading={"Quality"} content={"Our products are built with the highest quality standards, guaranteeing reliability and durability. "}/>
                 <BulletPoint heading={"Expertise"} content={"Our team of experts has extensive knowledge and experience in their respective fields, ensuring top-notch service. "}/>
