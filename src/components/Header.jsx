@@ -8,7 +8,7 @@ const Header = ({position}) => {
   const[active , setActive] = useState(false);
   return (
     <div className={` ${ position?"my-7":"absolute top-7 "} z-10 w-full flex justify-between md:items-center md:px-36 px-7 `}>
-     <Link to="/"> <img src={logo} alt='logo'/></Link>
+     <Link to="/"> <img src={logo} alt='logo' className='w-10 md:w-full ' /></Link>
       <div className={`md:flex bg-gradient-to-t from-[#FFFFFF24] to-[#FFFFFF00] ${active ?"flex":"hidden"} px-10 py-4 rounded-2xl`}> 
   
        <ul className={`flex flex-col md:flex-row gap-10 `}>
