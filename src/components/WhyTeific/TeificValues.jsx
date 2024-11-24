@@ -14,13 +14,13 @@ const TeificValues = () => {
         
             <div>
                 <div className='flex'>
-                    <img src={Diamond} alt='' className='w-48 h-48'  />
-                    <img src={Square} alt=''  className='w-48 h-48' />
+                    <img src={Diamond} alt='' className='w-32 h-32 md:w-48 md:h-48'  />
+                    <img src={Square} alt=''  className='w-32 h-32 md:w-48 md:h-48' />
                     
                 </div>
                 <div className='flex'>
-                    <img src={Quad} alt='' className='w-48 h-48' />
-                    <img src={Circle} alt='' className='w-48 h-48'/>
+                    <img src={Quad} alt='' className='w-32 h-32 md:w-48 md:h-48' />
+                    <img src={Circle} alt='' className='w-32 h-32 md:w-48 md:h-48'/>
                     
                 </div>
             </div>

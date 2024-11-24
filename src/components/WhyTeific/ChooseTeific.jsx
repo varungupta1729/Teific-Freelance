@@ -9,17 +9,17 @@ const ChooseTeific = () => {
     <div className='w-full md:h-screen py-10 bg-[#1D1D1F]'>
         <h2 className='my-10 md:my-0 text-3xl font-bold px-24 text-center md:text-left'>Here's why you should choose <span className='text-[#FBC93E]'>Teific</span></h2>
         <div className='px-10 md:px-36 flex gap-10 md:gap-0  md:flex-row flex-col w-full h-full justify-center items-center'>
-            <div className='md:w-1/2 h-full gap-10 md:gap-2 flex flex-col  justify-evenly'> 
+            <div className='pr-32 md:w-1/2 h-full gap-10 md:gap-2 flex flex-col  justify-evenly'> 
                 <BulletPoint heading={"Customization"} content={"Our products are tailored to your specific requirements, ensuring optimal performance and functionality."} />
-                <div>
+                <div className=''>
                     <div className='flex'>
-                        <img src={Diamond} alt='' className='w-48 h-48'  />
-                        <img src={Square} alt=''  className='w-48 h-48' />
+                        <img src={Diamond} alt='' className=' w-32 h-32 md:w-48 md:h-48'  />
+                        <img src={Square} alt=''  className='w-32 h-32 md:w-48 md:h-48' />
                         
                     </div>
                     <div className='flex'>
-                        <img src={Quad} alt='' className='w-48 h-48' />
-                        <img src={Circle} alt='' className='w-48 h-48'/>
+                        <img src={Quad} alt='' className='w-32 h-32 md:w-48 md:h-48' />
+                        <img src={Circle} alt='' className='w-32 h-32 md:w-48 md:h-48'/>
                         
                     </div>
                 </div>
