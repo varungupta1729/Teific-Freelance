@@ -8,7 +8,7 @@ const DirectorSection = () => {
       <motion.div  initial="initial"
   whileInView="animate"
   exit="exit"
-  viewport={{ once: true, amount: 0.7 }} // Ensures it animates only once when 50% is in view
+  viewport={{ once:true, amount: 0.7 }} // Ensures it animates only once when 50% is in view
   variants={slideAnimation('left')} className="w-full lg:w-1/2 flex flex-col gap-7 justify-center text-center lg:text-right">
         <h2 className="text-[#9DC4FF] text-7xl font-bold ">
           Keshav <br />
@@ -37,7 +37,7 @@ const DirectorSection = () => {
       <motion.div  initial="initial"
   whileInView="animate"
   exit="exit"
-  viewport={{ once: true, amount: 0.7 }} // Ensures it animates only once when 50% is in view
+  viewport={{ once:true, amount: 0.7 }} // Ensures it animates only once when 50% is in view
   variants={slideAnimation('right')} className="w-full lg:w-1/2 flex justify-center items-center">
         <img src={DirectorPhoto} alt="" />
       </motion.div>

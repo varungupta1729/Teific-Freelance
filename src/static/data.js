@@ -7,10 +7,7 @@ export const HeaderNav = [
         content:"About",
         link:'/about',
     },
-    {
-        content:"Blog",
-        link:'/blog',
-    },
+   
     {
         content:"Contact Us",
         link:'/contact',

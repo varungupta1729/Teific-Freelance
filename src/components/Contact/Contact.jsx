@@ -12,7 +12,7 @@ const Contact = () => {
           initial="initial"
           whileInView="animate"
           exit="exit"
-          viewport={{ once: true, amount: 0.7 }} // Ensures it animates only once when 50% is in view
+          viewport={{ once:true, amount: 0.7 }} // Ensures it animates only once when 50% is in view
           variants={slideAnimation("left")}
           className="w-full lg:w-1/2 lg:px-24 flex justify-center "
         >
@@ -27,7 +27,7 @@ const Contact = () => {
           initial="initial"
           whileInView="animate"
           exit="exit"
-          viewport={{ once: true, amount: 0.7 }} // Ensures it animates only once when 50% is in view
+          viewport={{ once:true, amount: 0.7 }} // Ensures it animates only once when 50% is in view
           variants={slideAnimation("right")}
           className="hidden w-[40%] lg:flex justify-center items-center"
         >
@@ -40,7 +40,7 @@ const Contact = () => {
           initial="initial"
           whileInView="animate"
           exit="exit"
-          viewport={{ once: true, amount: 0.7 }} // Ensures it animates only once when 50% is in view
+          viewport={{ once:true, amount: 0.7 }} // Ensures it animates only once when 50% is in view
           variants={slideAnimation("left")}
           className="lg:w-1/2 lg:px-24 flex flex-col  lg:mt-10 gap-6"
         >
@@ -61,7 +61,7 @@ const Contact = () => {
           initial="initial"
           whileInView="animate"
           exit="exit"
-          viewport={{ once: true, amount: 0.7 }} // Ensures it animates only once when 50% is in view
+          viewport={{ once:true, amount: 0.7 }} // Ensures it animates only once when 50% is in view
           variants={slideAnimation("right")}
           className="bg-[#193A4B4D] rounded-3xl px-5 lg:px-10 lg:w-[40%] py-10 flex flex-col gap-6 justify-center  "
         >

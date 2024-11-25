@@ -21,7 +21,7 @@ const Template = ({ id, bgText, heading, content, imageUrl }) => {
           initial="initial"
           whileInView="animate"
           exit="exit"
-          viewport={{ once: true, amount: 0.7 }} // Ensures it animates only once when 50% is in view
+          viewport={{ once:true, amount: 0.7 }} // Ensures it animates only once when 50% is in view
           variants={id%2? slideAnimation("right"):slideAnimation("left")}
           className="w-full lg:w-1/2 h-full  flex flex-col justify-center px-10  lg:px-28 gap-4"
         >
