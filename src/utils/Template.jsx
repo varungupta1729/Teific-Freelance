@@ -5,7 +5,7 @@ import { slideAnimation } from "../motion/motion";
 const Template = ({ id, bgText, heading, content, imageUrl }) => {
   return (
     <div className="w-full lg:h-screen my-10 relative">
-      <h2 className="text-6xl lg:text-[10rem] font-bold text-center absolute whitespace-nowrap w-full -z-[10] text-[#FFFFFF33] mt-10 overflow-hidden">
+      <h2 className="animate-marquee text-6xl lg:text-[10rem] font-bold text-center absolute whitespace-nowrap w-full -z-[10] text-[#FFFFFF33] mt-10 ">
         {bgText.slice(0, 1)}
         <span className="text-[#FBC93E33]">{bgText[1]}</span>
 
